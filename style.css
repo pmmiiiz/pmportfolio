@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Questrial&family=Sarabun:wght@200&display=swap');
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -17,6 +17,7 @@ body{
     margin: 0;
     width: 100%;
     background-color: white;
+    font-family: 'DM Sans', sans-serif;
     
 }
 header{
@@ -77,10 +78,10 @@ header{
     font-family: 'DM Sans', sans-serif;
     width: 100%; 
     margin-top: 2vw;
+    padding-left: 4vw;
 }
 .nav-list a{
     text-decoration: none;
-    padding-left: 4vw;
     opacity: 50%;
     color: #2c47cc;
 }
@@ -98,12 +99,18 @@ header{
 .social{
     display: inline-flex;
     bottom: 4vw;
-    padding-left: 4vw;
     position: absolute;
+    
+}
+.social i{
+    opacity: 0.5;
+}
+.social i:hover{
+    opacity: 1;
+    color: #f4e96d;
 }
 i{
     font-size:2vw !important;
-    opacity: 50%;
     color: #2c47cc;
     cursor: pointer;
     padding-right: 1.2vw;
@@ -114,7 +121,7 @@ i{
     color: #2c47cc;
     font-size: 0.7vw;
     bottom: 2vw;
-    padding-left: 3vw;
+    left: 3vw;
     position: absolute;
 }
 .content{
@@ -156,10 +163,9 @@ i{
 .c { grid-area: c; }
 
 .col-21 {
+    padding-bottom: 1vw;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
     grid-template-areas:
         'a b '
         'a c'
@@ -167,24 +173,24 @@ i{
 }
 .d { grid-area: d; }
 .e { grid-area: e; }
+.f { grid-area: f; }
 .col-13 {
     display: grid;
+    padding-bottom: 1vw;
     grid-gap: 20px;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    /* grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto; */
     grid-template-areas:
         'd e e e'
+        'f f f f'
     ;
 }
 
 
 .image:hover{
       transition: .5s;
-      
 }
-.image img:hover{
-    border-radius: 15%;
-}
+
 .image{
       width: 100%;
       position: relative;
@@ -201,12 +207,26 @@ i{
       opacity: 0;
       transition: .5s ease;
       background-color: #fd5d78;
-      /* border-radius: 15%; */
+      /* cursor: pointer; */
+}
+.detailgreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #14b378;
 }
 
 .image:hover .detail {
       opacity: 1;
-      
+}
+.image:hover .detailgreen {
+    opacity: 1;
 }
 
 .fullwidth{
@@ -214,10 +234,109 @@ i{
 }
 .text{
     color: white;
-    font-size: 18px;
+    font-size: 1.4rem;
+    font-family: 'Questrial', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.text a{
+    color: white;
+}
+.text i{
+    color: white !important;
+    opacity: 1;
+}
+a:hover{
+    color: #f4e96d;
+}
+
+.info{
+    font-size: 1rem;
+    color: #272727;
+    text-align: left;
+    padding: 2vw 5vw;
+    font-family: 'Sarabun', sans-serif;
+}
+.info h2{
+    color: black;
+    text-align: center;
+    text-decoration:underline #2c47cc;
+    text-decoration-thickness: 0.5vw;
+}
+
+button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+  
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(250, 247, 242, 0.95);
+    padding-top: 100px;
+}
+
+.modal::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(250, 247, 242, 0.95);
+    background-color: transparent;
+}
+
+.modal::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    background-color: transparent;
+}
+
+  .modal-content {
+    /* background-color: #fefefe; */
+    margin: 0 auto 15% auto;
+    width: 80%;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #272727;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #e61f26;
+    cursor: pointer;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#poin{
+    cursor: pointer;
 }

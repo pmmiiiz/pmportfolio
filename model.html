@@ -3,15 +3,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ʀᴇꜱᴜᴍᴇ | @ᴍᴇʟʟᴏᴄʜᴇᴇꜱᴇ</title>
+    <title>ᴘᴏʀᴛꜰᴏʟɪᴏ</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 <body>
     <!-- บาร์ด้านบน -->
     <div class="top"></div>
     <header>
-        
         <div class="navbar">
             <div class="logo">
                 <a href="index.html">
@@ -27,7 +29,7 @@
                 <div><a href="about.html">About</a></div>
                 <div class="social">
                     <i class="fa fa-instagram"></i>
-                    <i class="fa fa-github"></i>
+                    <i class="fa fa-github" href="https://github.com/pmmiiiz"></i>
                     <i class="fa fa-facebook"></i>
                 </div>
                 <div class="credit">© 2022 by Pornsinee Chaimee</div>
@@ -37,55 +39,127 @@
     </header>
     <div class="content">
         <div class="col-2">
-            <div class="image">
+            <div class="image"  onclick="document.getElementById('rooms').style.display='block'">
                 <img src="pic/room.jpg" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <div class="detail"id="poin"><div class="text">Minimal Room</div></div>
             </div>
-            <div class="image">
+            <div class="image" onclick="document.getElementById('dia').style.display='block'">
                 <img src="pic/2.gif" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <div class="detail" id="poin"><div class="text">Diamond Adventure <br>Project</div></div>
             </div>
         </div>
         <div class="col-3">
             <div class="image">
                 <img src="pic/radio.gif" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <div class="detail"><div class="text">Pink Radio</div></div>
             </div>
             <div class="image">
                 <img src="pic/cubik1.gif" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <div class="detail"><div class="text">Rubik</div></div>
             </div>
             <div class="image">
                 <img src="pic/donut1.jpg" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <div class="detail"><div class="text">Donut</div></div>
             </div>
         </div>
         <div class="col-2">
             <div class="image">
                 <img src="pic/car.jpg" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <div class="detail"><div class="text">Recreational vehicle (RV)</div></div>
             </div>
             <div class="image">
-                <img src="pic/bmo.gif" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <img src="pic/tbz-11.jpg" class="fullwidth">
+                <div class="detail"><div class="text">Cat Spaceship</div></div>
             </div>
         </div>
         <div class="col-3">
             <div class="image">
                 <img src="pic/girl.jpg" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <div class="detail"><div class="text">Girl</div></div>
             </div>
             <div class="image">
                 <img src="pic/bmoo.gif" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <div class="detail"><div class="text">BMO | Adventure Time</div></div>
             </div>
             <div class="image">
-                <img src="pic/car.jpg" class="fullwidth">
-                <div class="detail"><div class="text"><h3>SANGYEON</h3>상연<br>1996-11-04<br>Leader<br>Main Vocalist</div></div>
+                <img src="pic/her.jpg" class="fullwidth">
+                <div class="detail"><div class="text">Hogwarts Girl</div></div>
+            </div>
+        </div>
+
+        <div id="rooms" class="modal">
+            <span onclick="document.getElementById('rooms').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="modal-content">
+                <div class="col-2">
+                    <div class="image">
+                        <img src="pic/room.jpg" class="fullwidth">
+                    </div>
+                    <div class="image">
+                        <img src="pic/com.jpg" class="fullwidth">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="pic/room.jpg" class="fullwidth">
+                    </div>
+                    <div class="image">
+                        <img src="pic/com.jpg" class="fullwidth">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="pic/room.jpg" class="fullwidth">
+                    </div>
+                    <div class="image">
+                        <img src="pic/com.jpg" class="fullwidth">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dia" class="modal">
+            <span onclick="document.getElementById('dia').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="modal-content">
+                <div class="col-2">
+                    <div class="image">
+                        <img src="pic/car.jpg" class="fullwidth">
+                    </div>
+                    <div class="image">
+                        <img src="pic/com.jpg" class="fullwidth">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="pic/car.jpg" class="fullwidth">
+                    </div>
+                    <div class="image">
+                        <img src="pic/com.jpg" class="fullwidth">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="image">
+                        <img src="pic/car.jpg" class="fullwidth">
+                    </div>
+                    <div class="image">
+                        <img src="pic/com.jpg" class="fullwidth">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+ 
 <script>
+var modal1 = document.getElementById('rooms');
+var modal2 = document.getElementById('dia');
+
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
 </script>
 </body>
 </html>
