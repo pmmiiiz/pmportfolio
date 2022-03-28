@@ -436,3 +436,37 @@ button {
     cursor: pointer;
     border-radius: 10px;
   }
+  .respon{
+    display: none;
+}
+  @media screen and (max-width: 1024px) and (min-width: 200px) {
+    body {
+        margin: 0;
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: hidden; /* Enable scroll if needed */
+        background-color: rgba(250, 247, 242, 1);
+        display: flex;  
+    }
+    header{
+        display: none;
+    }
+    .content{
+        display: none;
+    }
+    .respon{
+        display: block;
+        z-index: 5000;
+        position: fixed;
+        text-align: center;
+        /* left: 50%;
+        top: 50%; */
+        top: 50%;  
+        left: 50%;  
+        transform: translate(-50%, -50%);  
+    }
+  }
