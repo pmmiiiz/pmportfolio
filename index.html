@@ -36,31 +36,31 @@
     </header>
     <div class="content">
         <div class="col-21">
-            <div class="image a">
+            <div class="image a" >
                 <img src="pic/poster.png" class="fullwidth">
-                <div class="detail"><div class="text">Poster</div></div>
+                <div class="detailblue"><div class="text">Poster</div></div>
             </div>
-            <div class="image b">
+            <div class="image b" onclick="document.getElementById('rooms').style.display='block'">
                 <img src="pic/room3.jpg" class="fullwidth">
-                <div class="detail"id="poin"><div class="text">Minimal Room</div></div>
+                <div class="detailsky" id="poin"><div class="text">Minimal Room</div></div>
             </div>
-            <div class="image c">
+            <div class="image c" onclick="document.getElementById('cat').style.display='block'">
                 <img src="pic/cat.jpg" class="fullwidth">
-                <div class="detail"><div class="text">Cat Spaceship</div></div>
+                <div class="detail" id="poin"><div class="text">Cat Spaceship</div></div>
             </div>
         </div>
         <div class="col-3">
             <div class="image">
                 <img src="pic/radio.gif" class="fullwidth">
-                <div class="detail"><div class="text">Pink Radio</div></div>
+                <div class="detailpink"><div class="text">Pink Radio</div></div>
             </div>
             <div class="image">
                 <img src="pic/cubik1.gif" class="fullwidth">
-                <div class="detail"><div class="text">Rubik</div></div>
+                <div class="detailyellow"><div class="text">Rubik</div></div>
             </div>
-            <div class="image">
+            <div class="image" onclick="document.getElementById('donut').style.display='block'">
                 <img src="pic/donut1.jpg" class="fullwidth">
-                <div class="detail"><div class="text">Donut</div></div>
+                <div class="detailorange" id="poin"><div class="text">Donut</div></div>
             </div>
         </div>
         <div class="col-2">
@@ -84,31 +84,137 @@
             </div>
         </div>
         <div class="col-3">
-            <div class="image">
-                <img src="pic/girl.jpg" class="fullwidth">
-                <div class="detail"><div class="text">Girl</div></div>
+            <div class="image" onclick="document.getElementById('her').style.display='block'">
+                <img src="pic/her.jpg" class="fullwidth">
+                <div class="detailorange" id="poin"><div class="text">Hogwarts Girl</div></div>
             </div>
             <div class="image">
                 <img src="pic/bmoo.gif" class="fullwidth">
-                <div class="detail"><div class="text">BMO | Adventure Time</div></div>
+                <div class="detailsky"><div class="text">BMO | Adventure Time</div></div>
             </div>
             <div class="image">
-                <img src="pic/her.jpg" class="fullwidth">
-                <div class="detail"><div class="text">Hogwarts Girl</div></div>
+                <img src="pic/girl.jpg" class="fullwidth">
+                <div class="detailpink"><div class="text">Girl</div></div>
             </div>
         </div>
         <div class="col-2">
-            <div class="image">
+            <div class="image" onclick="document.getElementById('cars').style.display='block'">
                 <img src="pic/car.jpg" class="fullwidth">
-                <div class="detail"><div class="text">Recreational vehicle (RV)</div></div>
+                <div class="detail" id="poin"><div class="text">Recreational vehicle (RV)</div></div>
             </div>
             <div class="image" onclick="document.getElementById('dia').style.display='block'">
                 <img src="pic/2.gif" class="fullwidth">
-                <div class="detail" id="poin"><div class="text">Diamond Adventure <br>Project</div></div>
+                <div class="detailpink" id="poin"><div class="text">Diamond Adventure <br>Project</div></div>
+            </div>
+        </div>
+
+        <div id="rooms" class="modal">
+            <span onclick="document.getElementById('rooms').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="modal-content">
+                <div class="col-1">
+                    <video width="100%" controls>
+                        <source src="pic/room.mp4" type="video/mp4">
+                        <source src="pic/room.ogg" type="video/ogg">
+                    </video>
+                    <p>Modeling, Texture</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="dia" class="modal">
+            <span onclick="document.getElementById('dia').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="modal-content">
+                <div class="col-1">
+                    <video width="100%" controls>
+                        <source src="pic/Diamond Adventure.mp4" type="video/mp4">
+                        <source src="pic/Diamond Adventure.mp4.ogg" type="video/ogg">
+                    </video>
+                    <p>Animation</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="donut" class="modal">
+            <span onclick="document.getElementById('donut').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="modal-content">
+                <div class="col-1">
+                    <video width="100%" controls>
+                        <source src="pic/donut.mp4" type="video/mp4">
+                        <source src="pic/donut.ogg" type="video/ogg">
+                    </video>
+                    <p>Modeling, Texture</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cars" class="modal">
+            <span onclick="document.getElementById('cars').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="modal-content">
+                <div class="col-1">
+                    <video width="100%" controls>
+                        <source src="pic/car.mp4" type="video/mp4">
+                        <source src="pic/car.ogg" type="video/ogg">
+                    </video>
+                    <p>Modeling</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cat" class="modal">
+            <span onclick="document.getElementById('cat').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="modal-content">
+                <div class="col-1">
+                    <video width="100%" controls>
+                        <source src="pic/cat.mp4" type="video/mp4">
+                        <source src="pic/cat.ogg" type="video/ogg">
+                    </video>
+                    <p>Modeling, Texture, Animation, Rigging</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="her" class="modal">
+            <span onclick="document.getElementById('her').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="modal-content">
+                <div class="col-1">
+                    <video width="100%" controls>
+                        <source src="pic/her.mp4" type="video/mp4">
+                        <source src="pic/her.ogg" type="video/ogg">
+                    </video>
+                    <p>Modeling</p>
+                </div>
             </div>
         </div>
     </div>
-<script>
-</script>
+    <script>
+        var modal1 = document.getElementById('rooms');
+        var modal2 = document.getElementById('dia');
+        var modal3 = document.getElementById('donut');
+        var modal4 = document.getElementById('cars');
+        var modal5 = document.getElementById('cat');
+        var modal6 = document.getElementById('her');
+        
+        
+        window.onclick = function(event) {
+          if (event.target == modal1) {
+            modal1.style.display = "none";
+          }
+          if (event.target == modal2) {
+            modal2.style.display = "none";
+          }
+          if (event.target == modal3) {
+            modal3.style.display = "none";
+          }
+          if (event.target == modal4) {
+            modal4.style.display = "none";
+          }
+          if (event.target == modal5) {
+            modal5.style.display = "none";
+          }
+          if (event.target == modal6) {
+            modal6.style.display = "none";
+          }
+        }
+    </script>
 </body>
 </html>
